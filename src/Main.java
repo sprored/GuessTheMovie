@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Main {
@@ -64,10 +65,12 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
     int failures = 0;
     int remainingAttempts = 10;
     String wrongLetters = "";
+    String lettersToIgnore = "";
 
     while ( !(Arrays.equals(starsToGuess, toGuess.toCharArray()) )&&
             !(remainingAttempts == 0)) {
-      char userChar = askForACharacter();
+      char userChar = askForACharacter(lettersToIgnore);
+      lettersToIgnore += userChar;
 
       // if the character is present display it
       // else count one error
@@ -124,6 +127,53 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
     return myStarsToGuess;
   }
 
+
+  /**
+   * Ask for a character
+   *
+   * @return
+   */
+  public static char askForACharacter(String dontCountTheseLetters) {
+    Scanner scanner = new Scanner(System.in);
+    String userInput = "";
+
+    System.out.println("Which is your guess?");
+    userInput = scanner.nextLine();
+    boolean invalidInput = true;
+    System.out.println("dontCountTheseLetters: " + dontCountTheseLetters);
+
+    while (invalidInput) {
+      if(userInput.length() != 1) {
+        System.out.println("Please, enter a single letter:");
+        userInput = scanner.nextLine();
+      } else if(dontCountTheseLetters.contains(userInput)){
+        System.out.println("Already used, enter a new letter:");
+        userInput = scanner.nextLine();
+      } else {
+        invalidInput = false;
+      }
+    }
+    return userInput.charAt(0);
+  }
+
+  /**
+   * Transform the line to *
+   *
+   * @param myLine
+   * @return
+   */
+  public static char[] transformLine(String myLine) {
+    char[] charMyLine = myLine.toCharArray();
+    char[] starMyLine = charMyLine;
+
+    for (int i = 0; i < myLine.length(); i++) {
+      if (charMyLine[i] != ' ') {
+        starMyLine[i] = '*';
+      }
+    }
+    return starMyLine;
+  }
+
   /**
    * Extract a line from the file
    *
@@ -159,43 +209,5 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
       e.printStackTrace();
     }
     return count;
-  }
-
-  /**
-   * Ask for a character
-   *
-   * @return
-   */
-  public static char askForACharacter() {
-    Scanner scanner = new Scanner(System.in);
-    String userInput = "";
-
-    System.out.println("Which is your guess?");
-    userInput = scanner.nextLine();
-
-    while (userInput.length() != 1) {
-      System.out.println("Please, enter a single letter:");
-      userInput = scanner.nextLine();
-    }
-    return userInput.charAt(0);
-  }
-
-
-  /**
-   * Transform the line to *
-   *
-   * @param myLine
-   * @return
-   */
-  public static char[] transformLine(String myLine) {
-    char[] charMyLine = myLine.toCharArray();
-    char[] starMyLine = charMyLine;
-
-    for (int i = 0; i < myLine.length(); i++) {
-      if (charMyLine[i] != ' ') {
-        starMyLine[i] = '*';
-      }
-    }
-    return starMyLine;
   }
 }
