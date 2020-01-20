@@ -20,10 +20,9 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
     /*
      **************** VARIABLES **************
      */
-    final String FILE1 = "movies.txt";
-    final String FILE2 = "100best.txt";
+    //final String FILE1 = "movies.txt";
+    final String FILE1 = "100best.txt";
     File file = new File(FILE1);
-    //String line = "";
 
     // First count the number of lines in the file
     int lineCount = countLinesInFile(file);
@@ -79,12 +78,12 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
         failures++;
         wrongLetters += userChar;
         remainingAttempts--;
-        System.out.println("WRONG!");
+        System.out.println("    WRONG!");
       } else {
         for (int i = 0; i < starsToGuess.length; i++) {
           starsToGuess[i] = newStarsToGuess[i];
         }
-        System.out.println("RIGHT!");
+        System.out.println("    RIGHT!");
       }
 
       System.out.println("");
@@ -97,11 +96,11 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
     if (remainingAttempts == 0){
       System.out.println();
       System.out.println();
-      System.out.println(" You loose!");
+      System.out.println("    You loose!");
     } else{
       System.out.println();
       System.out.println();
-      System.out.println("You WIN!");
+      System.out.println("    You WIN!");
     }
   }
 
@@ -140,7 +139,6 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
     System.out.println("Which is your guess?");
     userInput = scanner.nextLine();
     boolean invalidInput = true;
-    System.out.println("dontCountTheseLetters: " + dontCountTheseLetters);
 
     while (invalidInput) {
       if(userInput.length() != 1) {
@@ -183,10 +181,10 @@ in the word, if not, you lose a point. If you lose 10 points, game over!
    */
   public static String extractLine(String FILE, int lineNum) {
     try (Stream<String> all_lines = Files.lines(Paths.get(FILE))) {
-      return all_lines.skip(lineNum - 1).findFirst().get();
+      return all_lines.skip(lineNum - 1).findFirst().get().toLowerCase();
     } catch (IOException exception) {
       exception.printStackTrace();
-      return "Ther has been some problem reading the file ... or else.";
+      return "There has been some problem reading the file ... or else.";
     }
 
   }
