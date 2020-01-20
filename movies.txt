@@ -1,25 +1,125 @@
-the shawshank redemption
-the godfather
-the dark knight
-schindler's list
-pulp fiction
-the lord of the rings
-the good the bad and the ugly
-fight club
-the lord of the rings
-forrest gump
-star wars
-inception
-the lord of the rings
-the matrix
-samurai
-star wars
-city of god
-the silence of the lambs
-batman begins
-die hard
-chinatown
-room
-dunkirk
-fargo
-no country for old men
+The Godfather
+The Shawshank Redemption
+Schindler's List
+Raging Bull
+Casablanca
+Citizen Kane
+Gone with the Wind
+The Wizard of Oz
+One Flew Over the Cuckoo's Nest
+Lawrence of Arabia
+Vertigo
+Psycho
+The Godfather: Part II
+On the Waterfront
+Sunset Blvd.
+Forrest Gump
+The Sound of Music
+12 Angry Men
+West Side Story
+Star Wars: Episode IV - A New Hope
+2001: A Space Odyssey
+E.T. the Extra-Terrestrial
+The Silence of the Lambs
+Chinatown
+The Bridge on the River Kwai
+Singin' in the Rain
+It's a Wonderful Life
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+Some Like It Hot
+Ben-Hur
+Apocalypse Now
+Amadeus
+The Lord of the Rings: The Return of the King
+Gladiator
+Titanic
+From Here to Eternity
+Saving Private Ryan
+Unforgiven
+Raiders of the Lost Ark
+Rocky
+A Streetcar Named Desire
+The Philadelphia Story
+To Kill a Mockingbird
+An American in Paris
+The Best Years of Our Lives
+My Fair Lady
+A Clockwork Orange
+Doctor Zhivago
+The Searchers
+Jaws
+Patton
+Butch Cassidy and the Sundance Kid
+The Treasure of the Sierra Madre
+The Good, the Bad and the Ugly
+The Apartment
+Platoon
+High Noon
+Braveheart
+Dances with Wolves
+Jurassic Park
+The Exorcist
+The Pianist
+Goodfellas
+The Deer Hunter
+All Quiet on the Western Front
+Bonnie and Clyde
+The French Connection
+City Lights
+It Happened One Night
+A Place in the Sun
+Midnight Cowboy
+Mr. Smith Goes to Washington
+Rain Man
+Annie Hall
+Fargo
+Giant
+Shane
+The Grapes of Wrath
+The Green Mile
+Close Encounters of the Third Kind
+Nashville
+Network
+The Graduate
+American Graffiti
+Pulp Fiction
+Terms of Endearment
+Good Will Hunting
+The African Queen
+Stagecoach
+Mutiny on the Bounty
+The Great Dictator
+Double Indemnity
+The Maltese Falcon
+Wuthering Heights
+Taxi Driver
+Rear Window
+The Third Man
+Rebel Without a Cause
+North by Northwest
+Yankee Doodle Dandy
+The Shawshank Redemption
+The Godfather
+The Dark Knight
+Schindler's List
+Pulp Fiction
+The Lord Of The Rings
+The Good The Bad And The Ugly
+Fight Club
+The Lord Of The Rings
+Forrest Gump
+Star Wars
+Inception
+The Lord Of The Rings
+The Matrix
+Samurai
+Star Wars
+City Of God
+The Silence Of The Lambs
+Batman Begins
+Die Hard
+Chinatown
+Room
+Dunkirk
+Fargo
+No Country For Old Men
